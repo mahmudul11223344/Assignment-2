@@ -111,10 +111,12 @@ li a:hover{
 
     nav{
         padding: 12px 16px;
+        align-items: center;
     }
 
     .nav-ul{
         position: fixed;
+        margin-top: 50px;
         width: 100%;
         height: 100vh;
         background: black;
