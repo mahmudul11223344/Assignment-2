@@ -164,7 +164,7 @@ li a:hover {
 
 /* curriculum style */
 
-.curriculum {
+main {
     background-image: url(../assets/bg.png);
     background-size: cover;
     background-position: center;
@@ -202,7 +202,7 @@ li a:hover {
     gap: 29px;
 }
 
-.curriculum-card img{
+.curriculum-card img {
     margin: 40px 117px;
 }
 
@@ -220,7 +220,7 @@ li a:hover {
     text-align: center;
     color: rgb(100, 200, 255);
     font-size: 0.95rem;
-    font-weight: 700; 
+    font-weight: 700;
     margin-top: 25px;
 }
 
@@ -277,6 +277,160 @@ li a:hover {
     font-weight: 900;
     cursor: pointer;
     color: rgb(255, 255, 255);
+}
+
+/* our-stories style */
+
+.our-stories {
+    background: url(image), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    padding: 60px 140px;
+    text-align: center;
+}
+
+.stories {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.story-btn {
+    background-color: rgb(17, 17, 17);
+    padding: 10px 61px;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 12px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.story-heading {
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.story-2,
+.story-3,
+.story-4,
+.story-5 {
+    width: 290.69px;
+    height: 301.61px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.story-1 {
+    width: 540.27px;
+    height: 630.52px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.story-1-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 35px;
+}
+
+.story-1-des {
+    text-align: justify;
+    font-size: 0.96rem;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    margin: 35px;
+}
+
+.story-1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.story-2 img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.story-3 img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.story-4 img{
+    border-radius: 16px 16px 0px 0px;
+}
+
+.story-5 img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.story-2-heading {
+    padding: 15px;
+    font-size: 0.96rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-top: -20px;
+}
+
+.story-1-btn {
+    width: 174.51px;
+    height: 47.93px;
+    font-size: 0.96rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    padding: 14px;
+    transform: translateX(40px) translateY(-20px);
+}
+
+.story-2-btn,
+.story-4-btn {
+    width: 174.51px;
+    height: 47.93px;
+    font-size: 0.96rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    padding: 14px;
+    transform: translateX(40px) translateY(-25px);
+}
+
+.story-3-btn {
+    width: 174.51px;
+    height: 47.93px;
+    font-size: 0.96rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 47.93px;
+    background: rgb(93, 88, 240);
+    padding: 14px;
+    transform: translateX(40px) translateY(-25px);
+}
+
+.story-5-btn {
+    width: 127px;
+    height: 38px;
+    font-size: 0.96rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+    padding: 9px;
+    transform: translateX(40px) translateY(-25px);
+}
+
+.all-stories {
+    width: 601px;
+    height: 622.4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 
