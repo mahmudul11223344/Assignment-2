@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .quicksand-font {
     font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.raleway-font {
+    font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -12,7 +21,7 @@ body {
     margin: 0px auto;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -22,7 +31,7 @@ body {
 
 /* nav style start */
 
-nav{
+nav {
     height: 80px;
     width: 100%;
     margin: 20px auto;
@@ -30,7 +39,7 @@ nav{
     justify-content: space-between;
 }
 
-.nav-btn{
+.nav-btn {
     background-color: rgb(254, 163, 1);
     padding: 10px 60.5px;
     color: white;
@@ -41,30 +50,30 @@ nav{
     cursor: pointer;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.nav-heading{
+.nav-heading {
     font-size: 2rem;
     font-weight: 700;
 }
 
-.list-1{
+.list-1 {
     color: rgb(254, 163, 1);
 }
 
-.list-2{
+.list-2 {
     color: rgb(1, 172, 253);
 }
 
-.list-3{
+.list-3 {
     color: rgb(5, 212, 223);
 }
 
-.list-4{
+.list-4 {
     color: rgb(93, 88, 239);
 }
 
@@ -86,12 +95,12 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-li a:hover{
+li a:hover {
     background: rgba(165, 136, 136, 0.8);
     transition: 0.5s;
 }
 
-.check-btn{
+.check-btn {
     font-size: 2rem;
     float: right;
     line-height: 80px;
@@ -100,7 +109,7 @@ li a:hover{
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
 
@@ -108,34 +117,38 @@ li a:hover{
 
 /* banner style start */
 
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.banner-heading{
+.banner-section {
+    margin-bottom: 60px;
+}
+
+.banner-heading {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 24px;
 }
 
-.heading-1{
+.heading-1 {
     color: rgb(254, 163, 1);
 }
 
-.heading-2{
+.heading-2 {
     color: rgb(1, 172, 253);
 }
 
-.banner-p{
+.banner-p {
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 24px;
     color: rgb(17, 17, 17);
 }
 
-.banner-btn{
+.banner-btn {
     background-color: rgb(17, 17, 17);
     color: rgb(255, 255, 255);
     font-size: 1.25rem;
@@ -147,35 +160,114 @@ li a:hover{
 
 /* banner style end */
 
+/* main style start */
+
+/* curriculum style */
+
+.curriculum {
+    background-image: url(../assets/bg.png);
+}
+
+.curriculum-heading {
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.curriculum-card-heading {
+    font-size: 1.56rem;
+    font-weight: 700;
+    color: rgb(32, 32, 32);
+}
+
+.curriculum-card-des {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+}
+
+.curriculum-card {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 29px;
+}
+
+.curriculum-card-1 {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.curriculum-btn-1 {
+    color: rgb(100, 200, 255);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.curriculum-card-2 {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.curriculum-btn-2 {
+    color: rgb(240, 170, 0);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.curriculum-card-3 {
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.curriculum-btn-3 {
+    color: rgb(135, 0, 255);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+
 @media screen and (max-width: 576px) {
 
-    body{
+    body {
         width: 390px;
     }
 
-    .nav-btn{
+    .nav-btn {
         display: none;
     }
 
-    .nav-heading{
+    .nav-heading {
         display: none;
     }
 
-    .logo{
+    .logo {
         padding-left: 50px;
     }
 
-    .check-btn{
+    .check-btn {
         display: block;
     }
 
-    nav{
+    nav {
         padding: 12px 16px;
-        align-items: center ;
+        align-items: center;
         border-bottom: 0.5px solid rgb(254, 163, 1);
     }
 
-    .nav-ul{
+    .nav-ul {
         position: fixed;
         margin-top: 50px;
         width: 100%;
@@ -187,13 +279,14 @@ li a:hover{
         transition: all 0.5s ease;
         z-index: 1000;
     }
-    
+
     .check-btn {
         font-size: 2.5rem;
         line-height: 80px;
         cursor: pointer;
         display: block;
-        z-index: 2000; /* Above the menu */
+        z-index: 2000;
+        /* Above the menu */
     }
 
     nav ul li {
@@ -206,20 +299,20 @@ li a:hover{
         font-size: 20px;
     }
 
-    a:hover{
+    a:hover {
         background: none;
         color: chartreuse;
     }
 
-    #check:checked ~ .nav-ul{
+    #check:checked~.nav-ul {
         left: 0;
     }
 
-    .banner{
+    .banner {
         flex-direction: column;
     }
 
-    .banner-all{
+    .banner-all {
         order: 2;
     }
 }
