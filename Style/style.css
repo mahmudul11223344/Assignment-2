@@ -611,7 +611,7 @@ footer {
         font-weight: 500;
     }
 
-    .banner-section {
+    .banner-section, .curriculum {
         width: 100%;
         height: auto;
         padding: 0 20px;
