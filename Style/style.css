@@ -50,6 +50,11 @@ nav {
     cursor: pointer;
 }
 
+.nav-btn:hover {
+    background-color: rgb(1, 172, 253);
+    transition: 0.8s;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -156,6 +161,12 @@ li a:hover {
     padding: 10px 47px;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    background: rgba(165, 136, 136, 0.8);
+    transition: 0.5s;
 }
 
 /* banner style end */
@@ -279,6 +290,11 @@ main {
     color: rgb(255, 255, 255);
 }
 
+.arrow:hover {
+    background: rgba(165, 136, 136, 0.8);
+    transition: 0.5s;
+}
+
 /* our-stories style */
 
 .our-stories {
@@ -289,7 +305,6 @@ main {
 
 .stories {
     display: flex;
-    align-items: center;
     gap: 30px;
     margin-top: 80px;
 }
@@ -305,6 +320,12 @@ main {
     cursor: pointer;
 }
 
+.story-btn:hover {
+    background-color: rgba(165, 136, 136, 0.8);
+    transition: 0.5s;
+    border: none;
+}
+
 .story-heading {
     font-size: 2.9rem;
     font-weight: 700;
@@ -314,12 +335,17 @@ main {
 
 .story-2,
 .story-3,
+.story-3-1,
 .story-4,
 .story-5 {
     width: 290.69px;
     height: 301.61px;
     border-radius: 16px;
     background: rgb(255, 255, 255);
+}
+
+.story-3-1 {
+    display: none;
 }
 
 .story-1 {
@@ -351,19 +377,13 @@ main {
     border-radius: 16px 16px 0px 0px;
 }
 
-.story-2 img {
-    border-radius: 16px 16px 0px 0px;
-}
-
-.story-3 img {
-    border-radius: 16px 16px 0px 0px;
-}
-
-.story-4 img{
-    border-radius: 16px 16px 0px 0px;
-}
-
+.story-2 img,
+.story-3-1 img,
+.story-3 img,
+.story-4 img,
 .story-5 img {
+    width: 100%;
+    height: auto;
     border-radius: 16px 16px 0px 0px;
 }
 
@@ -390,48 +410,47 @@ main {
 
 .story-2-btn,
 .story-4-btn {
-    width: 174.51px;
-    height: 47.93px;
     font-size: 0.96rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
     border-radius: 47.93px;
     background: rgb(149, 178, 38);
     padding: 14px;
-    transform: translateX(40px) translateY(-25px);
+    margin: 0px 78px 0px 38px;
+    transform: translateX(0px) translateY(-25px);
 }
 
 .story-3-btn {
-    width: 174.51px;
-    height: 47.93px;
     font-size: 0.96rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
     border-radius: 47.93px;
     background: rgb(93, 88, 240);
     padding: 14px;
-    transform: translateX(40px) translateY(-25px);
+    margin: 0px 78px 0px 38px;
+    transform: translateX(0px) translateY(-25px);
 }
 
 .story-5-btn {
-    width: 127px;
-    height: 38px;
     font-size: 0.96rem;
     font-weight: 500;
     color: rgb(255, 255, 255);
     border-radius: 47.93px;
     background: rgb(149, 178, 38);
-    padding: 9px;
-    transform: translateX(40px) translateY(-25px);
+    padding: 14px;
+    margin: 0px 78px 0px 38px;
+    transform: translateX(0px) translateY(-25px);
 }
 
 .all-stories {
+    height: 100%;
+    width: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.marquee-text{
+.marquee-text {
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -440,55 +459,55 @@ main {
 
 /* footer style start */
 
-footer{
+footer {
     background: rgb(1, 172, 253);
 }
 
-.all-footer{
+.all-footer {
     padding: 123px 228.09px 174px 140px;
     display: flex;
     gap: 80px;
 }
 
-.logo-div{
+.logo-div {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo-heading{
+.logo-heading {
     font-size: 2rem;
     font-weight: 700;
     color: rgb(255, 255, 255);
 }
 
-.footer-des{
+.footer-des {
     font-size: 1.25rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
 
-.header-school{
+.header-school {
     font-size: 1.5rem;
     font-weight: 700;
     color: rgb(255, 255, 255);
     margin-bottom: 15px;
 }
 
-.ul-items{
+.ul-items {
     list-style: none;
-    color: rgb(255, 255, 255); 
-    margin-bottom: 10px;  
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
 }
 
-.social-heading{
+.social-heading {
     font-size: 1.625rem;
     font-weight: 700;
     color: rgb(255, 255, 255);
     margin-bottom: 15px;
 }
 
-.all-icons{
+.all-icons {
     display: flex;
     gap: 10px;
 }
@@ -563,7 +582,8 @@ footer{
         left: 0;
     }
 
-    .banner,.curriculum-card {
+    .banner,
+    .curriculum-card {
         flex-direction: column;
     }
 
@@ -571,23 +591,84 @@ footer{
         order: 2;
     }
 
-    .arrow-btn{
+    .arrow-btn {
         display: none;
     }
 
-    .marquee-text{
+    .marquee-text {
         margin-top: 30px;
     }
 
-    .story-1{
+    .story-1 {
         display: none;
     }
 
-    .all-stories{
-        grid-template-columns: 1fr;
+    .story-2,
+    .story-3,
+    .story-3-1,
+    .story-4,
+    .story-5 {
+        width: 174px;
+        height: 180px;
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
     }
-    
-    .all-footer{
+
+    .story-2 img,
+    .story-3-1 img,
+    .story-3 img,
+    .story-4 img,
+    .story-5 img {
+        border-radius: 9.53px 9.53px 0px 0px;
+    }
+
+    .story-2-btn,
+    .story-4-btn {
+        font-size: 9.13px;
+        font-weight: 500;
+        margin: 0px 46px 0px 22px;
+        padding: 5px;
+        transform: translateY(-15px);
+    }
+
+    .story-3-btn {
+        font-size: 9.13px;
+        font-weight: 500;
+        margin: 0px 46px 0px 22px;
+        padding: 5px;
+        transform: translateY(-15px);
+    }
+
+    .story-5-btn {
+        font-size: 9.13px;
+        font-weight: 500;
+        margin: 0px 46px 0px 22px;
+        padding: 5px;
+        transform: translateY(-15px);
+    }
+
+    .story-2-heading {
+        font-size: 9.13px;
+    }
+
+    .story-3-1 {
+        display: block;
+    }
+
+    .all-stories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stories{
+        margin: 0px -38px;
+        margin-top: 80px;
+    }
+
+    .our-stories {
+        padding: 50px;
+    }
+
+    .all-footer {
         flex-direction: column;
         padding: 20px 30px;
     }
