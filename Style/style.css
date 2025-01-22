@@ -177,13 +177,6 @@ li a:hover {
 
 /* curriculum style */
 
-/* main {
-    background-image: url(../assets/bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
 .curriculum{
     background-image: url(../assets/bg.png);
     background-size: cover;
@@ -228,7 +221,7 @@ li a:hover {
 
 .curriculum-card-1 {
     height: 477px;
-    padding: 40px 53px;
+    padding: 40px 43px;
     box-sizing: border-box;
     border: 0.94px solid rgb(222, 245, 255);
     border-radius: 18.86px;
@@ -246,7 +239,7 @@ li a:hover {
 
 .curriculum-card-2 {
     height: 477px;
-    padding: 40px 53px;
+    padding: 40px 43px;
     box-sizing: border-box;
     border: 0.94px solid rgb(255, 244, 220);
     border-radius: 18.86px;
@@ -263,7 +256,7 @@ li a:hover {
 }
 
 .curriculum-card-3 {
-    padding: 40px 53px;
+    padding: 40px 43px;
     height: 477px;
     box-sizing: border-box;
     border: 0.94px solid rgb(242, 232, 255);
