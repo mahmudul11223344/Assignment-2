@@ -589,5 +589,6 @@ footer{
     
     .all-footer{
         flex-direction: column;
+        padding: 20px 30px;
     }
 }
