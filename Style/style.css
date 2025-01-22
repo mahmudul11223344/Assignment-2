@@ -587,9 +587,26 @@ footer {
         flex-direction: column;
     }
 
-    .curriculum-card-1, .curriculum-card-2, .curriculum-card-3 {
+    .curriculum-card-1,
+    .curriculum-card-2,
+    .curriculum-card-3 {
         width: 98%;
         padding: 36px 28px 36px 28px;
+    }
+
+    .curriculum-heading {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .banner-heading {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .banner-p {
+        font-size: 14px;
+        font-weight: 500;
     }
 
     /* .banner-img{
@@ -601,9 +618,9 @@ footer {
         order: 2;
     }
 
-    /* .banner{
-        width: 85%;
-    } */
+    .banner {
+        text-align: center;
+    }
 
     .arrow-btn {
         display: none;
