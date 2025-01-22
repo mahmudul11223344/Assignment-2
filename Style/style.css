@@ -426,8 +426,6 @@ main {
 }
 
 .all-stories {
-    width: 601px;
-    height: 622.4px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -565,11 +563,31 @@ footer{
         left: 0;
     }
 
-    .banner {
+    .banner,.curriculum-card {
         flex-direction: column;
     }
 
     .banner-all {
         order: 2;
+    }
+
+    .arrow-btn{
+        display: none;
+    }
+
+    .marquee-text{
+        margin-top: 30px;
+    }
+
+    .story-1{
+        display: none;
+    }
+
+    .all-stories{
+        grid-template-columns: 1fr;
+    }
+    
+    .all-footer{
+        flex-direction: column;
     }
 }
