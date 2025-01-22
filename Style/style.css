@@ -291,7 +291,7 @@ main {
 }
 
 .arrow:hover {
-    background: rgba(165, 136, 136, 0.8);
+    background: rgb(1, 172, 253);
     transition: 0.5s;
 }
 
