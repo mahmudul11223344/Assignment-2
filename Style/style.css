@@ -196,7 +196,6 @@ li a:hover {
     font-weight: 700;
     color: rgb(32, 32, 32);
     text-align: center;
-    margin-top: -32px;
 }
 
 .curriculum-card-des {
@@ -205,6 +204,7 @@ li a:hover {
     color: rgb(128, 128, 128);
     text-align: center;
     margin-top: 15px;
+    margin-top: -20px;
 }
 
 .curriculum-card {
@@ -215,12 +215,17 @@ li a:hover {
     gap: 29px;
 }
 
-.curriculum-card img {
+/* .curriculum-card img {
     margin: 40px 117px;
-}
+} */
 
 .curriculum-card-1 {
     height: 477px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
     padding: 40px 43px;
     box-sizing: border-box;
     border: 0.94px solid rgb(222, 245, 255);
@@ -234,11 +239,15 @@ li a:hover {
     color: rgb(100, 200, 255);
     font-size: 0.95rem;
     font-weight: 700;
-    margin-top: 25px;
 }
 
 .curriculum-card-2 {
     height: 477px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
     padding: 40px 43px;
     box-sizing: border-box;
     border: 0.94px solid rgb(255, 244, 220);
@@ -252,12 +261,16 @@ li a:hover {
     color: rgb(240, 170, 0);
     font-size: 0.95rem;
     font-weight: 700;
-    margin-top: 25px;
 }
 
 .curriculum-card-3 {
-    padding: 40px 43px;
     height: 477px;
+    padding: 40px 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
     box-sizing: border-box;
     border: 0.94px solid rgb(242, 232, 255);
     border-radius: 18.86px;
@@ -270,7 +283,6 @@ li a:hover {
     color: rgb(135, 0, 255);
     font-size: 0.95rem;
     font-weight: 700;
-    margin-top: 25px;
 }
 
 .arrow-btn {
@@ -518,8 +530,8 @@ footer {
 @media screen and (max-width: 576px) {
 
     body {
-        width: 390px;
-        margin: 0 auto;
+        max-width: 390px;
+        margin: 0px auto;
     }
 
     .nav-btn {
