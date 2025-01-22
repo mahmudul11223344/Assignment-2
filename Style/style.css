@@ -587,9 +587,23 @@ footer {
         flex-direction: column;
     }
 
+    .curriculum-card-1, .curriculum-card-2, .curriculum-card-3 {
+        width: 98%;
+        padding: 36px 28px 36px 28px;
+    }
+
+    /* .banner-img{
+        width: 336px;
+        margin-right: 20px;
+} */
+
     .banner-all {
         order: 2;
     }
+
+    /* .banner{
+        width: 85%;
+    } */
 
     .arrow-btn {
         display: none;
@@ -659,7 +673,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .stories{
+    .stories {
         margin: 0px -38px;
         margin-top: 80px;
     }
